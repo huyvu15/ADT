@@ -49,4 +49,23 @@ Ví dụ minh họa:
 
 > (4) Ổn định
 
+# Dạng thuật toán chia để trị
+## Merge sort
+Tư tưởng:
+
+- Chia: thành 2 hoặc nhiều bài toán con $S_1, S_2$
+
+- Trị: Giải quyết lần lượt $S_1, S_2$
+
+- Kết hợp : trộn kết quả $S_1, S_2$
+
+$\rightarrow$ Với tư tưởng kia dễ dàng cài đặt bằng đệ quy
+
+## Quick sort 
+> không có tính ổn định
+
+Cũng áp dụng tư tưởng chia để trị
+
+Chia dự vào phần tử chốt
+
 # note này chỉ mang tính chất ghi lại lý thuyết
