@@ -33,16 +33,48 @@ def insert_sort(a):
     print(a)
     
     
-# merge sort chưa cài đặt thành công  
 def merge_sort(a, l, r):
     if r > l:
-        mid = math.floor((l+r)/2)
+        mid = math.floor((l + r) / 2)
         merge_sort(a, l, mid)
-        merge_sort(a, mid+1, r)
+        merge_sort(a, mid + 1, r)
         merge(a, l, r, mid)
 
 def merge(a, l, r, mid):
-    pass
+    n1 = mid - l + 1
+    n2 = r - mid
+    left = [0] * n1
+    right = [0] * n2
+
+    for i in range(n1):
+        left[i] = a[l + i]
+
+    for j in range(n2):
+        right[j] = a[mid + 1 + j]
+
+    i = 0
+    j = 0
+    merge_index = l
+
+    while i < n1 and j < n2:
+        if left[i] <= right[j]:
+            a[merge_index] = left[i]
+            i += 1
+        else:
+            a[merge_index] = right[j]
+            j += 1
+        merge_index += 1
+
+    while i < n1:
+        a[merge_index] = left[i]
+        i += 1
+        merge_index += 1
+
+    while j < n2:
+        a[merge_index] = right[j]
+        j += 1
+        merge_index += 1
+
 
 
 def quick_sort(a, l, r):
@@ -66,8 +98,13 @@ def pattion(a, l, r):
 
 # a = list(map(int, input().split()))
 a = [7, 2, 1, 6, 8, 5, 3, 4]
+print("Result:")
 bubble_sort(a)
 select_sort(a)
 insert_sort(a)
 quick_sort(a, 0, len(a) - 1)
 print(a)
+merge_sort(a, 0, len(a) - 1)
+print(a)
+
+

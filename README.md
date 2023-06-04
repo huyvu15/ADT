@@ -61,6 +61,10 @@ Tư tưởng:
 
 $\rightarrow$ Với tư tưởng kia dễ dàng cài đặt bằng đệ quy
 
+- tuy nhiên vẫn phải cài thêm hàm để kết hợp 2 mảng sau cùng lại
+merge(a,l, r, mid)
+
+
 ## Quick sort 
 > không có tính ổn định
 
