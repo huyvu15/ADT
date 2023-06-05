@@ -72,4 +72,19 @@ Cũng áp dụng tư tưởng chia để trị
 
 Chia dự vào phần tử chốt
 
+# Dạng thuật toán đếm phân phối
+## Đếm phân phối
+- Dãy khóa: 
+
+> có thể trùng nhau 
+
+> kích thước n
+
+- Dãy giá trị khóa phân biệt
+> kích thucows m
+
+> m < n
+
+>
+
 # note này chỉ mang tính chất ghi lại lý thuyết
