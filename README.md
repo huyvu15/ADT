@@ -89,9 +89,23 @@ Ví dụ dãy khóa: a = [1 , 2, 1, 0, 2, 1, 1, 0]
 
 $\rightarrow$ [0, 0, 1, 1, 1, 1, 2, 2]
 
-| Dãy giá trị khóa pb | 0 | 1 | 2 |
-|Tần suất| 2 | 4 | 2 |
+| Dãy giá trị khóa pb     | 0 | 1 | 2 |
+| ------------------------|---|---|---|
+|Tần suất                 | 2 | 4 | 2 |
 |Vị trí đầu tiên kiểm tra | 0 | 2 | 6 |
+
+$\rightarrow$ không sắp xếp tại chỗ
+
+|id | 0  1  2  3  4  5  6  7 |
+|---|------------------------|
+| b | 0  0  1  1  1  1  2  2 |
+ 
+Tư tưởng:
+- Đếm tần suất lưu vào mảng count[m]
+
+- Xác định vị trí đầu tiên của từng khóa phân biệt, lưu vào post[m]
+
+- Sắp xếp
 
 
 
