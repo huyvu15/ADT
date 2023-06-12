@@ -93,7 +93,26 @@ def pattion(a, l, r):
     a[i], a[r] = swap(a[i], a[r])
     return i
 
-
+def sort_dpp(a): # còn thiếu k là cái gì ?????
+    #  đếm tần suất rồi lưu vào mảng count[m]
+    p = [] # khởi tạo mảng m phần tử 0
+    for i in range(len(a)):
+        p[a[i]] += 1
+    
+    # xác định vị trí đầu tiên của từng khóa phân biệt, lưu vào pos[m]
+    pos = []
+    for i in range(1,len(a)):
+        pos[i] = p[i - 1] + p[i - 1]
+    
+    b = []
+    for i in range(len(a)):
+        id = pos[a[i] - k ]
+        b[id] = a[i]
+        pos[a[i]-k] += 1
+    
+    a = b
+    
+    
 
 
 # a = list(map(int, input().split()))
