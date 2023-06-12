@@ -81,6 +81,7 @@ Chia dự vào phần tử chốt
 > kích thước n
 
 - Dãy giá trị khóa phân biệt
+
 > kích thucows m
 
 > m < n
@@ -107,7 +108,9 @@ Tư tưởng:
 
 - Sắp xếp
 
+Thuật toán có thể áp dụng cho các phần tử khác loại
 
+Tuy nhiên cần điều chỉnh thuật toán để xử lý đúng nhất
 
 
 
