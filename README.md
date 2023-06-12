@@ -85,6 +85,16 @@ Chia dự vào phần tử chốt
 
 > m < n
 
->
+Ví dụ dãy khóa: a = [1 , 2, 1, 0, 2, 1, 1, 0]
+
+$\rightarrow$ [0, 0, 1, 1, 1, 1, 2, 2]
+
+| Dãy giá trị khóa pb | 0 | 1 | 2 |
+|Tần suất| 2 | 4 | 2 |
+|Vị trí đầu tiên kiểm tra | 0 | 2 | 6 |
+
+
+
+
 
 # note này chỉ mang tính chất ghi lại lý thuyết
