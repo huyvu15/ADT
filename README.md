@@ -113,5 +113,32 @@ Thuật toán có thể áp dụng cho các phần tử khác loại
 Tuy nhiên cần điều chỉnh thuật toán để xử lý đúng nhất
 
 
+# Tree
+## Khái niệm cơ bản
+> Cây
 
-# note này chỉ mang tính chất ghi lại lý thuyết
+- Gốc (là 1 nút đặc biệt)
+
+- Nút (node):
+
++ lá
+
++ nhánh
+
+- Cạnh
+
+- Cây con
+
+> Nút
+- Bậc (degree): số nút con của chính nó
+
+- Mức (level): 
+
++ Nút gốc: mức 0
+
++ Nút (p) = mức(node cha) + 1 (Đệ quy)
+
+
+
+
+# Note này chỉ mang tính chất ghi lại lý thuyết

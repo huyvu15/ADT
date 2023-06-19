@@ -93,24 +93,30 @@ def pattion(a, l, r):
     a[i], a[r] = swap(a[i], a[r])
     return i
 
-def sort_dpp(a): # còn thiếu k là cái gì ?????
-    #  đếm tần suất rồi lưu vào mảng count[m]
-    p = [] # khởi tạo mảng m phần tử 0
+# code này đang sai
+def sort_dpp(a):
+    m = max(a) + 1
+
+    # đếm tần suất rồi lưu vào mảng count[m]
+    p = [0] * m
     for i in range(len(a)):
         p[a[i]] += 1
-    
+
     # xác định vị trí đầu tiên của từng khóa phân biệt, lưu vào pos[m]
-    pos = []
-    for i in range(1,len(a)):
-        pos[i] = p[i - 1] + p[i - 1]
-    
-    b = []
+    pos = [0] * m
+    for i in range(1, len(a)):
+        pos[i] = pos[i - 1] + p[i - 1]
+
+    b = [0] * len(a)
+
     for i in range(len(a)):
-        id = pos[a[i] - k ]
+        id = pos[a[i]]
         b[id] = a[i]
-        pos[a[i]-k] += 1
-    
+        pos[a[i]] += 1
+
     a = b
+    return a
+
     
     
 
@@ -119,12 +125,21 @@ def sort_dpp(a): # còn thiếu k là cái gì ?????
 a = [7, 2, 1, 6, 8, 5, 3, 4]
 print("Result:")
 bubble_sort(a)
+a = [7, 2, 1, 6, 8, 5, 3, 4]
 select_sort(a)
+a = [7, 2, 1, 6, 8, 5, 3, 4]
 insert_sort(a)
+a = [7, 2, 1, 6, 8, 5, 3, 4]
 quick_sort(a, 0, len(a) - 1)
 print(a)
+a = [7, 2, 1, 6, 8, 5, 3, 4]
 merge_sort(a, 0, len(a) - 1)
 print(a)
+
+a = [7, 2, 1, 6, 8, 5, 3, 4]
+print(sort_dpp(a))
+
+
 
 
 
