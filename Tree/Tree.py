@@ -5,6 +5,17 @@ class Node:
         self.value = value
         self.left = left
         self.right = right
+    def hasLeftChile(self, p):
+        pass
+    
+    def hasRightChile(self, p):
+        pass
+    
+    def addLeftChild(self, p, item):
+        pass
+    
+    def addRightChild(self, p, item):
+        pass
 
 class Tree:
     def __init__(self,root, size):
