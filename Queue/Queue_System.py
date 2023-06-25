@@ -1,8 +1,7 @@
 # xây dựng hệ thống mô phỏng trật tự lễ tân ở quầy tiếp đón tại ngân hàng
-import install_queue_linkedlist as Que
+import Queue as Que
 import random
 import numpy as np
-import random
 # lớp khách hàng
 class Customer:
     def __init__(self, id, corivalTime):
