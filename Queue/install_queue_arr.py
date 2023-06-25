@@ -1,3 +1,4 @@
+# cài đặt queue bằng mảng, list
 class Queue:
     def __init__(self):
         self.head = 0

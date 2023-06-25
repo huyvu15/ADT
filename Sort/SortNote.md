@@ -57,6 +57,10 @@ Tư tưởng:
 
 $\rightarrow$ Với tư tưởng kia dễ dàng cài đặt bằng đệ quy
 
+- tuy nhiên vẫn phải cài thêm hàm để kết hợp 2 mảng sau cùng lại
+merge(a,l, r, mid)
+
+
 ## Quick sort 
 > không có tính ổn định
 
@@ -64,4 +68,42 @@ Cũng áp dụng tư tưởng chia để trị
 
 Chia dự vào phần tử chốt
 
+# Dạng thuật toán đếm phân phối
+## Đếm phân phối
+- Dãy khóa: 
 
+> có thể trùng nhau 
+
+> kích thước n
+
+- Dãy giá trị khóa phân biệt
+
+> kích thucows m
+
+> m < n
+
+Ví dụ dãy khóa: a = [1 , 2, 1, 0, 2, 1, 1, 0]
+
+$\rightarrow$ [0, 0, 1, 1, 1, 1, 2, 2]
+
+| Dãy giá trị khóa pb     | 0 | 1 | 2 |
+| ------------------------|---|---|---|
+|Tần suất                 | 2 | 4 | 2 |
+|Vị trí đầu tiên kiểm tra | 0 | 2 | 6 |
+
+$\rightarrow$ không sắp xếp tại chỗ
+
+|id | 0  1  2  3  4  5  6  7 |
+|---|------------------------|
+| b | 0  0  1  1  1  1  2  2 |
+ 
+Tư tưởng:
+- Đếm tần suất lưu vào mảng count[m]
+
+- Xác định vị trí đầu tiên của từng khóa phân biệt, lưu vào post[m]
+
+- Sắp xếp
+
+Thuật toán có thể áp dụng cho các phần tử khác loại
+
+Tuy nhiên cần điều chỉnh thuật toán để xử lý đúng nhất
