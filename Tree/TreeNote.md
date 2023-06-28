@@ -41,3 +41,10 @@ Ví dụ: preOrder(Tree.root) // in toàn bộ cây
 
 > duyệt sau
 
+## BFS: duyệt theo chiều rộng
+
+Sử dụng cấu trúc hàng đợi
+
+Truyền vào Node vì có thể duyệt tại bất cứ vị trí nào trong cây
+
+

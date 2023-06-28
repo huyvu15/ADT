@@ -82,7 +82,7 @@ def BFS(p):
     '''
     q = Que.Queue()
     q.enqueue(p)
-    while q.isEmpty():
+    while not q.isEmpty():
         curNode = q.dequeue()
         # duyệt Node đó
         print(curNode.value)
