@@ -4,6 +4,7 @@
 - min -heap, max -heap
 
 (k, v): k- khóa, v-value
+
 $\rightarrow$ theo mức độ ưu tiên
 
 > Các phương thức
@@ -13,4 +14,5 @@ $\rightarrow$ theo mức độ ưu tiên
 
 - Xây dựng 1 đống nhị phân từ dãy khóa k
 
--
+
+> Xây dựng 1 đống nhị phân
