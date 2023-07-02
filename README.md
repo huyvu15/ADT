@@ -5,4 +5,8 @@ thư viện numpy.
 
 # [Ôn cây](https://github.com/huyvu15/ADT/blob/master/Tree/TreeNote.md)
 
+# [Ôn Heap](https://github.com/huyvu15/ADT/blob/master/Heap/Heap_note.md)
+
+#
+
 # Repo này chỉ mang tính chất ghi lại lý thuyết
