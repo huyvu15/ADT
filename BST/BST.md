@@ -24,7 +24,22 @@ Các phương thức:
 
 - search
 
-# Tất cả thao tác đều có độ phức tạp là O(h) = O(n)
+## Tất cả thao tác đều có độ phức tạp là O(h) = O(n)
+
+# Cây cân bằng
+- Là cây tìm kiếm nhị phân có độ chênh lệch chiều cao của cây con có gốc ở p 
+
+|h(p.left) - h(p.right)| <= 1
+
+- Tính chất: cây cb có kích thước n có chiều cao là  clogn
+
+CM: Giả sử cây cần bằn chiều cao h có kích thước là T(h)
+
+$\rightarrow$ T(h) <= 1 + 2T(h-1)
+
+T(1) = 1
+
+T(2) = 3
 
 
 
