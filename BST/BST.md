@@ -30,10 +30,9 @@ Các phương thức:
 - Là cây tìm kiếm nhị phân có độ chênh lệch chiều cao của cây con có gốc ở p 
 
 - Đảm bảo cho các chi phí trên cây tìm kiếm nhị phân là tối thiểu
-
 |h(p.left) - h(p.right)| <= 1
 
-- Tính chất: cây cb có kích thước n có chiều cao là  clogn
+- Tính chất: cây cb có kích thước n có chiều cao là  c(logn)
 
 CM: Giả sử cây cần bằn chiều cao h có kích thước là T(h)
 
@@ -52,19 +51,24 @@ B1: $a_0$ = 15
 B2: $a_1$ = 10
 
 B3: $a_2$ = 5
+
 cây mất tính cb do ko thỏa mãn công thức (1)
 
 cần tái cân bằng cây
 
-B4: $a_4$ = 20
+B4: $a_3$ = 20
+
 cây ko mất tính cân bằng
 
-B5: $a_5$ =18
+B5: $a_4$ = 18
+
 cây mất tính cb
 
-B6, 7: $a_6$ = 30, $a_7$ = 40
+B6, 7, 8: $a_5$ = 30, $a_6$ = 40, $a_7$ =40
 
+B9: $a_9$ = 25
 
+B10: $a_10$ = 28
 
 
 

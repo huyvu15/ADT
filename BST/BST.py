@@ -5,6 +5,10 @@ class BST:
         self.right = right
     
     def Searchkey(self, node, key_to_Find):
+        if node == None: return None
+        if node.key == key_to_Find: return node
+        if key_to_Find < node.key: return self.Searchkey(node.left, key_to_Find)
+        if key_to_Find > node.key: return self.Searchkey(node.right, key_to_Find)
         pass
     
     def min(self, p):
@@ -36,3 +40,16 @@ class BST:
         return s
     
     # viết tương tự đối với tìm các nút liền trước
+    
+    def add(self, value): 
+        v = self.search(value)
+        if value < v.key:
+            new_bst = BST(value)
+            v.left = new_bst
+        elif value > v.key:
+            pass
+        else:
+            print("Trên cây có rồi")
+        
+    def search(self, value):
+        pass
