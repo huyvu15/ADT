@@ -9,7 +9,6 @@ class BST:
         if node.key == key_to_Find: return node
         if key_to_Find < node.key: return self.Searchkey(node.left, key_to_Find)
         if key_to_Find > node.key: return self.Searchkey(node.right, key_to_Find)
-        pass
     
     def min(self, p):
         # tìm node chứa khóa bé nhất trên cây có gốc ở node # null
@@ -51,5 +50,11 @@ class BST:
         else:
             print("Trên cây có rồi")
         
-    def search(self, value):
-        pass
+    def Search(self,node, value):
+        if node == None: return None
+        if node.key == value: return None
+        if node.left != None and value > node.key: return self.Search(node.left, value)
+        if node.right != None and value > node.key: return self.Search(node.right, value)
+        return None
+    
+    # có thể thêm hàm search này vào hàm add cho gọn hơn

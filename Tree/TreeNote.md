@@ -25,9 +25,7 @@
 
 # Thuật toán duyệt cây
 
-## DFS: 
-
-Duyệt cây theo chiều sâu
+## DFS: Duyệt cây theo chiều sâu
 
 > preOrder: duyệt trước
 
@@ -39,7 +37,7 @@ Ví dụ: preOrder(Tree.root) // in toàn bộ cây
 
 > inOrder: duyệt trong
 
-> duyệt sau
+> postOrder: duyệt sau
 
 ## BFS: duyệt theo chiều rộng
 
